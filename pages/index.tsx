@@ -42,6 +42,9 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout id={styles.container}>
+      <div id={styles.mushroom}>
+        <img src={imgSrc}/>
+      </div>
       <h1 id={styles.title}>
         EFAS.
       </h1>
@@ -56,9 +59,7 @@ export default function Home(): JSX.Element {
           );
         })}
       </div>
-      <div id={styles.mushroom}>
-        <img src={imgSrc}/>
-      </div>
+
     </Layout>
   );
 }

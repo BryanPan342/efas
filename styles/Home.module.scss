@@ -8,18 +8,15 @@
   height: calc(100vh - 100px);
 }
 
-#title {
-  margin-top: 5vh;
-}
-
 #mushroom {
-  margin: 0;
-  margin-top: 12px;
+  position:relative;
+  left: -40px;
+  margin-top: 24px;
   align-items: center;
   flex-direction: center;
 
   img {
-    width: 240px;
+    width: 200px;
   }
 }
 
@@ -31,7 +28,7 @@
   margin-top: 32px;
 
   h4 {
-    // margin-left: 12px;
+    margin-left: 0px;
     margin-top: 12px;
   }
 }
