@@ -22,7 +22,7 @@ h1 {
 
 h3 {
   font: $header-3;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 h4 {
@@ -31,7 +31,7 @@ h4 {
 }
 
 p {
-  line-height: 1.6em;
+  font: $body-small;
 }
 
 button {

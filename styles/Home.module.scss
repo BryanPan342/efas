@@ -3,8 +3,8 @@
 #container {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  width: 100%;
+  width: 80vw;
+  padding: 0 20vw;
   height: calc(100vh - 100px);
 }
 
@@ -14,6 +14,7 @@
 
 #mushroom {
   margin: 0;
+  margin-top: 12px;
   align-items: center;
   flex-direction: center;
 
@@ -22,14 +23,19 @@
   }
 }
 
+#menu {
+  text-align: left;
+}
+
 .section {
   margin-top: 32px;
 
   h4 {
+    // margin-left: 12px;
     margin-top: 12px;
   }
 }
 
 .section:first-of-type {
-  margin-top: 0;
+  margin-top: 16px;
 }
