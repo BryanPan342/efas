@@ -32,8 +32,8 @@ const MENU_ITEMS: TMenu = {
 };
 
 export default function Home(): JSX.Element {
-
   const [imgSrc, setImgSrc] = useState('gifs/light_up_shroom.gif');
+
   useEffect(() => {
     setTimeout(() => {
       setImgSrc('gifs/pulsating_shroom.gif');
@@ -42,12 +42,12 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout id={styles.container}>
-      <div id={styles.mushroom}>
-        <img src={imgSrc}/>
-      </div>
       <h1 id={styles.title}>
         EFAS.
       </h1>
+      <div id={styles.mushroom}>
+        <img src={imgSrc}/>
+      </div>
       <div id={styles.menu}>
         {Object.entries(MENU_ITEMS).map(([sectionTitle, {description, items}]) => {
           return (

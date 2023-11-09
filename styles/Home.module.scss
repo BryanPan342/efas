@@ -3,15 +3,17 @@
 #container {
   display: flex;
   flex-direction: column;
-  width: 80vw;
-  padding: 0 20vw;
+  text-align: center;
+  width: 100%;
   height: calc(100vh - 100px);
 }
 
+#title {
+  margin-top: 5vh;
+}
+
 #mushroom {
-  position:relative;
-  left: -40px;
-  margin-top: 24px;
+  margin: 0;
   align-items: center;
   flex-direction: center;
 
@@ -20,19 +22,14 @@
   }
 }
 
-#menu {
-  text-align: left;
-}
-
 .section {
   margin-top: 32px;
 
   h4 {
-    margin-left: 0px;
     margin-top: 12px;
   }
 }
 
 .section:first-of-type {
-  margin-top: 16px;
+  margin-top: 0;
 }
