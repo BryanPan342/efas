@@ -42,12 +42,12 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout id={styles.container}>
-      <h1 id={styles.title}>
-        EFAS.
-      </h1>
       <div id={styles.mushroom}>
         <img src={imgSrc}/>
       </div>
+      <h1 id={styles.title}>
+        EFAS.
+      </h1>
       <div id={styles.menu}>
         {Object.entries(MENU_ITEMS).map(([sectionTitle, {description, items}]) => {
           return (
