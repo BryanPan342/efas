@@ -25,8 +25,7 @@ const MENU_ITEMS: TMenu = {
     description: 'four-course menu',
     items: [
       'arancini',
-      'labneh',
-      'carrot',
+      'labneh + carrot',
       'braised short rip',
       'mushroom forest',
     ],
