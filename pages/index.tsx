@@ -1,3 +1,4 @@
+import anime from 'animejs';
 import React, { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.scss';
@@ -16,7 +17,7 @@ const MENU_ITEMS: TMenu = {
     description: 'al a carte',
     items: [
       'oolong milk tea',
-      'barley tea',
+      'watermelon sake',
       'saigon flip',
     ],
   },
@@ -24,8 +25,8 @@ const MENU_ITEMS: TMenu = {
     description: 'four-course menu',
     items: [
       'arancini',
-      'maitaki',
-      'wellington',
+      'labneh + carrot',
+      'braised short rip',
       'mushroom forest',
     ],
   },
@@ -33,12 +34,24 @@ const MENU_ITEMS: TMenu = {
 
 export default function Home(): JSX.Element {
   const [imgSrc, setImgSrc] = useState('gifs/light_up_shroom.gif');
+  const ids = [styles.title, styles.menu];
 
   useEffect(() => {
+
     setTimeout(() => {
       setImgSrc('gifs/pulsating_shroom.gif');
+
+      ids.map(id =>  anime({
+        targets: `#${id}`,
+        opacity: [0, 1],
+        easing: 'easeInOutQuart',
+        duration: 700,
+        translateY: ['5px', '0px'],
+      }));
     }, 1500);
+
   }, []);
+
 
   return (
     <Layout id={styles.container}>
