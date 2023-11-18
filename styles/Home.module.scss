@@ -10,6 +10,7 @@
 
 #title {
   margin-top: 5vh;
+  opacity: 0;
 }
 
 #mushroom {
@@ -20,6 +21,10 @@
   img {
     width: 200px;
   }
+}
+
+#menu {
+  opacity: 0;
 }
 
 .section {
